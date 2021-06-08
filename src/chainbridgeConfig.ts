@@ -37,7 +37,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
     {
       chainId: 0,
       networkId: 4,
-      name: "Ethereum - Rinkeby",
+      name: "Rinkeby",
       bridgeAddress: "0xE7E06DbDE4B53916B082EF2cD3e4dA7726f35AfF",
       erc20HandlerAddress: "0x59Cf02A02bfbD7e0F04Af886d63a033E0823ff5c",
       rpcUrl: "https://rinkeby-light.eth.linkpool.io",
