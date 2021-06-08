@@ -80,7 +80,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       erc20HandlerAddress: "0x597483123A7A9c2Fe9e25c51500b9Bc0b4679b86",
       rpcUrl: "https://avalanche--fuji--rpc.datahub.figment.io/apikey/c863bd667354ebe021eaaf5f8908f8ef/ext/bc/C/rpc",
       type: "Ethereum",
-      blockExplorer: "https://cchain.explorer.avax-test.network/",
+      blockExplorer: "https://cchain.explorer.avax-test.network/txs",
       nativeTokenSymbol: "AVAX",
       deployedBlockNumber: 0,
       tokens: [
