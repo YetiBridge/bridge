@@ -1,5 +1,6 @@
 import ETHIcon from "./media/tokens/eth.svg";
 import WETHIcon from "./media/tokens/weth.svg";
+import DAIIcon from "./media/tokens/dai.svg";
 
 export type TokenConfig = {
   address: string;
@@ -31,20 +32,28 @@ export type ChainbridgeConfig = {
 };
 
 export const chainbridgeConfig: ChainbridgeConfig = {
-  // Goerli - Kotti Bridge
+  // Rinkeby-Fuji Bridge
   chains: [
     {
-      chainId: 1,
-      networkId: 5,
-      name: "Ethereum - Goerli",
-      bridgeAddress: "0x2524d71D163f60747630c4EBeB077a9832329646",
-      erc20HandlerAddress: "0xDc26320258ADfd806d125223Fb0F94e54D13FA51",
-      rpcUrl: "https://goerli.prylabs.net",
+      chainId: 0,
+      networkId: 4,
+      name: "Ethereum - Rinkeby",
+      bridgeAddress: "0xE7E06DbDE4B53916B082EF2cD3e4dA7726f35AfF",
+      erc20HandlerAddress: "0x59Cf02A02bfbD7e0F04Af886d63a033E0823ff5c",
+      rpcUrl: "https://rinkeby-light.eth.linkpool.io",
       type: "Ethereum",
-      blockExplorer: "https://goerli.etherscan.io/tx",
+      blockExplorer: "https://rinkeby.etherscan.io/tx",
       nativeTokenSymbol: "ETH",
       deployedBlockNumber: 3554182,
       tokens: [
+        {
+          address: "0xe116a4cf94754856586d19e3eb741c09ceaa81de",
+          name: "Pyros",
+          symbol: "PYRO",
+          imageUri: DAIIcon,
+          resourceId:
+            "0x0000000000000000000000e116a4cf94754856586d19e3eb741c09ceaa81de01",
+        },
         {
           address: "0x735B895bCb37cBba5812154f4F34480EcE1B672C",
           name: "Wrapped ETC",
@@ -64,17 +73,26 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       ],
     },
     {
-      chainId: 2,
-      networkId: 6,
-      name: "Ethereum Classic - Kotti",
-      bridgeAddress: "0x2524d71D163f60747630c4EBeB077a9832329646",
-      erc20HandlerAddress: "0xDc26320258ADfd806d125223Fb0F94e54D13FA51",
-      rpcUrl: "https://www.ethercluster.com/kotti",
+      chainId: 1,
+      networkId: 43113,
+      name: "Fuji",
+      bridgeAddress: "0xe3aDD2c1Ab996cfd1A6186DA47a9D330350C62FF",
+      erc20HandlerAddress: "0x597483123A7A9c2Fe9e25c51500b9Bc0b4679b86",
+      rpcUrl: "https://avalanche--fuji--rpc.datahub.figment.io/apikey/c863bd667354ebe021eaaf5f8908f8ef/ext/bc/C/rpc",
       type: "Ethereum",
-      blockExplorer: "https://blockscout.com/etc/kotti/tx",
-      nativeTokenSymbol: "ETC",
+      blockExplorer: "https://cchain.explorer.avax-test.network/",
+      nativeTokenSymbol: "AVAX",
       deployedBlockNumber: 0,
       tokens: [
+        {
+          address: "0x23A9FD05ef0c5fb9dDE964C4d4191A169Fd221f8",
+          name: "wrapped ETC",
+          symbol: "xPYRO",
+          imageUri: DAIIcon,
+          resourceId:
+            "0x0000000000000000000000e116a4cf94754856586d19e3eb741c09ceaa81de01",
+          isNativeWrappedToken: true,
+        },
         {
           address: "0x23A9FD05ef0c5fb9dDE964C4d4191A169Fd221f8",
           name: "Wrapped ETC",
@@ -136,3 +154,4 @@ export const chainbridgeConfig: ChainbridgeConfig = {
   // },
   // ]
 };
+
