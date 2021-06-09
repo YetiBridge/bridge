@@ -1,6 +1,6 @@
 import ETHIcon from "./media/tokens/eth.svg";
 import WETHIcon from "./media/tokens/weth.svg";
-import DAIIcon from "./media/networks/ava.svg";
+import DAIIcon from "./media/networks/ava.png";
 
 export type TokenConfig = {
   address: string;
