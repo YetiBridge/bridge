@@ -50,7 +50,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           address: "0xe116a4cf94754856586d19e3eb741c09ceaa81de",
           name: "Pyros",
           symbol: "PYRO",
-          imageUri: DAIIcon,
+          imageUri: PYROIcon,
           resourceId:
             "0x0000000000000000000000e116a4cf94754856586d19e3eb741c09ceaa81de01",
         },
@@ -88,7 +88,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           address: "0x23A9FD05ef0c5fb9dDE964C4d4191A169Fd221f8",
           name: "wrapped ETC",
           symbol: "xPYRO",
-          imageUri: DAIIcon,
+          imageUri: PYROIcon,
           resourceId:
             "0x0000000000000000000000e116a4cf94754856586d19e3eb741c09ceaa81de01",
           isNativeWrappedToken: true,
