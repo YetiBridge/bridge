@@ -1,6 +1,6 @@
 import ETHIcon from "./media/tokens/eth.svg";
 import WETHIcon from "./media/tokens/weth.svg";
-import PYROIcon from "./media/Icons/gift.svg";
+import PYROIcon from "./media/tokens/dai.svg";
 
 export type TokenConfig = {
   address: string;
