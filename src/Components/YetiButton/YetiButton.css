@@ -1,0 +1,8 @@
+.YetiButton {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(226, 43, 43);
+  border: none;
+  padding: 0.4em 0.5em;
+  border-radius: 0.2rem;
+}

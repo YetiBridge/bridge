@@ -6,9 +6,9 @@
     "@babel/core": "^7.12.3",
     "@babel/runtime": "^7.12.1",
     "@chainsafe/chainbridge-contracts": "1.0.5",
-    "@chainsafe/web3-context": "1.2.0",
     "@chainsafe/common-components": "1.0.26",
     "@chainsafe/common-theme": "1.0.10",
+    "@chainsafe/web3-context": "1.2.0",
     "@material-ui/styles": "4.10.0",
     "@sentry/react": "^5.26.0",
     "@types/history": "^4.7.8",
@@ -26,6 +26,12 @@
   },
   "devDependencies": {
     "@sentry/cli": "1.58.0",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/node-logger": "^6.2.9",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "@testing-library/user-event": "^12.1.7",
@@ -52,10 +58,22 @@
     "clean:dist": "rm -rf ./*/**/dist && rm -rf ./*/**/build && rm -rf ./*/**/storybook-static",
     "clean": "yarn clean:dependencies && yarn clean:dist",
     "prettier": "prettier --config .prettierrc 'packages/**/src/**/*.{ts,tsx,js,jsx,md}' --write",
-    "start:tunnel": "./ngrok http https://localhost:3000"
+    "start:tunnel": "./ngrok http https://localhost:3000",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
