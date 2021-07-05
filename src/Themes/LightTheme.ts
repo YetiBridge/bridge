@@ -1,5 +1,7 @@
 import { createTheme } from "@chainsafe/common-theme";
 
+const orange = "#FF6B00";
+
 export const lightTheme = createTheme({
   globalStyling: {
     body: {
@@ -25,7 +27,7 @@ export const lightTheme = createTheme({
         },
         preflight: {
           1: "#85A5FF", // Button bg color
-          2: "#262626", // Button color
+          2: orange, // Button color
         },
         transactionModal: {
           1: "#597EF7", // border //geekblue5
@@ -44,9 +46,10 @@ export const lightTheme = createTheme({
         variants: {
           primary: {
             root: {
-              backgroundColor: "#262626",
+              backgroundColor: orange,
+              // border-radius: "12px",
               color: "#ffffff",
-              border: `1px solid #262626`,
+              border: `1px solid transparent`,
               "& svg": {
                 fill: "#ffffff",
               },
