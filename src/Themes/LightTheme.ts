@@ -1,11 +1,11 @@
 import { createTheme } from "@chainsafe/common-theme";
 
-const orange = "#FF6B00";
+const orange = "#87ceeb";
 
 export const lightTheme = createTheme({
   globalStyling: {
     body: {
-      backgroundColor: "#F5F5F5",
+      backgroundColor: "#FFFFFF",
     },
   },
   themeConfig: {
@@ -21,7 +21,7 @@ export const lightTheme = createTheme({
           1: "#595959", // FAQ button // gray8
         },
         header: {
-          1: "#F5F5F5", // Background
+          1: "#FFFFFF", // Background
           2: "#595959", // Text color //gray8
           3: "#BFBFBF", // border // gray6
         },
